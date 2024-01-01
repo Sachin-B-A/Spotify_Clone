@@ -1,0 +1,459 @@
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Nunito', sans-serif; */
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main --------------------------------------------------------------> */
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    
+}
+.main >div{
+    border-radius: 1rem;
+}
+
+
+/* Side bar-------------------------------------------------------------------> */
+.side-bar{
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+   margin-right: 0.5rem;
+   
+    
+}
+.nav{
+    background-color:#191414;
+    height: 150px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    /* align-items: last baseline; */
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+   
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.5;
+    padding-left: 0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 20px;
+}
+.nav-option a{
+    font-size: 16px;
+    margin-left: 1rem;
+   
+}
+.header-lib{
+    background-color:#191414;
+    padding: 0.6rem 1rem;
+    /* opacity: 0.5; */
+    display: flex;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.library{
+    background-color:#191414;
+    border-radius: 1rem;
+}
+
+#lib-icon{
+    height: 24px;
+    width: 24px;
+    margin-right: 0.4rem;
+}
+.button-lib{
+    padding: 0.2rem 0.4rem;
+    margin-right: 7rem;
+    opacity: 0.5;
+    position: relative;
+}
+.button-lib:hover{
+    opacity: 1;
+}
+#Plus{
+    opacity: 0.5;
+}
+#Plus:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.header-lib i {
+    position: relative;
+    top:0.4rem;
+}
+.playlist{
+    display: flex;
+    padding: 1.5rem 1.5rem;
+    flex-direction: column;
+    background-color: #232323;
+    align-items: flex-start;
+    margin: 0.5rem;
+    text-align: start;
+    margin-right: 0;
+    border-radius: 1rem;
+    
+}
+ul{
+    padding: 0;
+}
+.playlist button{
+    text-align: center;
+}
+.podcast{
+    display: flex;
+    /* height: 180px; */
+    padding: 1.5rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color:  #232323;
+    margin: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 0;
+    /* margin-bottom: 5rem; */
+    border-radius: 1rem;
+}
+.grouper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Main --------------------------------------------------------------> */
+
+.main-content{
+    background-color: blue;
+    flex: 1;
+    overflow: auto;
+    background-color:rgb(0, 0, 0);
+  
+}
+.sticky-nav{
+    position: static;
+    background-color: #121212;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 0.4rem;
+    padding-left: 1.9rem;
+    padding-right: 1rem;
+    padding-bottom: 0.8rem;
+    
+
+}
+#left{
+    margin-right: 0.3rem;
+    border-radius: 1rem;
+    opacity: 0.5;
+    
+}
+#right{
+    margin-left: 0.3rem;
+    border-radius: 1rem;
+    opacity: 0.5;
+ }
+#left:hover{
+    /* box-shadow: 0 0 5px white; */
+    opacity: 1;
+    transform: scale(0.2rem);
+}
+#right:hover{
+    /* box-shadow: 0 0 5px white; */
+    opacity: 1;
+    transform: scale(0.2rem);
+}
+
+#user{
+    opacity:0.5;
+    margin-left: 0.7rem;
+}
+#user:hover{
+   opacity: 1;
+   transform: scale(1rem);
+}
+.nav-download{
+    width: 23rem;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+
+}
+@media (max-width:1000px) {
+    #hide{
+        display: none;
+    }
+    .hide{
+        display: none;
+    }
+    .nav-download{
+        justify-content:flex-end;
+    }
+}
+.card{
+    background-color:#232323;
+    /* display: flex; */
+    /* flex-direction: col; */
+    /* justify-content: */
+    height: 280px;
+    width: 200px;
+    border-radius: 1rem;
+    background-color: #191414;
+    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+    margin-top: 0.6rem;
+    margin-left: 1.5rem;
+    transition: 0.2s ease ;
+}
+.card:hover{
+    background-color: #232323;
+
+}
+.card-img{
+    height: 150px;
+    width: 170px; 
+    border-radius: 1rem;
+    padding: 0.1rem;
+}
+.card p{
+    color: #fff;
+   padding: 0.4rem 0 0 0;
+   padding: 0;
+   position: relative;
+   bottom: 20px;
+}
+#player{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    bottom: 45px;
+    left: 110px;
+    /* top:2000px; */
+    z-index: -2;
+}
+#player:hover{
+    z-index: 20;
+    
+}
+.cards-container {
+    display: flex;
+    justify-content: flex-start; /* Align from the start */
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 0 0.5rem 0 0.5rem;
+}
+.footer{
+    height: 300px;
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+
+
+}
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid rgb(255, 255, 255);
+    opacity: 0.5;
+  
+}
+/* Music-player --------------------------------------------------------------> */
+
+
+.music-player{
+    background-color: yellow;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 0;
+    width: 200vh;
+    height: 72px;
+    background-color: #000;
+}
+
+
+.controls{
+    width: 33%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+.players{
+    width: 45% ;
+}
+.playercontrols{
+    font-size: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    justify-content:center;
+}
+.playercontrols i{
+    padding: 0 1rem 0 1rem;
+    margin-bottom: -0.3rem;
+}
+.playerbar{
+    font-size: small;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 0.4rem;
+    /* margin-bottom: 0.3rem; */
+}
+#first{
+    opacity: 0.5;
+
+}
+#first:hover{
+    opacity: 1;
+}
+#last{
+    opacity: 0.5;
+}
+#last:hover{
+    opacity: 1;
+}
+#center{
+    opacity: 0.5;
+}
+#center:hover{
+    opacity: 1;
+}
+#circle-player{
+  font-size: xx-large;
+  position: relative;
+  bottom: 0.2rem;
+}
+#circle-player:hover{
+    border-radius: 50%;
+     box-shadow: 0 0 10px white;
+}
+
+/* -----------------------------------------------------------------progress bar--------------------------------------- */
+#progress-bar{
+    width: 90%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.end-play{
+
+}
+#progress-bar::-webkit-slider-runnable-track{
+    background-color: rgb(244, 244, 244);
+    opacity: 0.5;
+    border-radius: 2rem;
+    height: 0.15rem;
+}
+#progress-bar::-webkit-slider-runnable-track:hover{
+    opacity: 1;
+}
+#progress-bar::-webkit-slider-thumb{
+    /* position: relative;
+    bottom: 0.3rem; */
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: rgb(47, 255, 102);
+    margin: -6px;
+    opacity: 0;
+}
+#progress-bar::-webkit-slider-thumb:hover{
+    opacity: 1;
+}
+
+.album{
+    width: 33%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+    
+}
+.album-img{
+    margin-top: 0.6rem;
+    height: 60px;
+    width: 60px;
+    border: 5px solid #2e2e2e ;
+    transition: ease ;
+}
+.album-img:hover{
+    box-shadow: 0 0 5px white;
+    
+}
+.album-name{
+    /* font-size: ; */
+    color: white;
+    /* padding-top: 2rem;
+     */
+     margin-top: 1.5rem;
+    padding: 1rem;
+}
+
+/* #like {
+    display: none; /* Hide the checkbox */
+  /* } */
+  
+/* #heart {
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    background-image: url('path/to/heart-logo.png'); /* Replace with your actual path */
+    /* background-size: cover;
+    cursor: pointer;
+  }
+  
+  #like:checked + #heart {
+    background-color: green;
+  } */ 
+  /* Music-player --------------------------------------------------------------> */
+#heart{
+    position: relative;
+    right: 1.2rem;
+}
+  #hearter{
+    opacity: 0;
+    position: relative;
+    /* left: 1rem; */
+  }
+  #like:checked + label #hearter {
+    opacity: 1;
+    z-index: 2;
+    /* box-shadow: 0 0 5px greenyellow; */
+}
+.controls{
+    opacity: 0.5;
+}
+.controls:hover{
+    opacity: 1;
+}
+#time{
+    padding: 0 0.4rem 0 0.4rem;
+}
+.line{
+    width: 900px;  
+    height: 250px;
+    background-image: url(spotify_license.png);
+    background-size: cover;
+}
+
+
+
+
